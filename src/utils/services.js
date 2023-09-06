@@ -1,5 +1,8 @@
-export const baseUrl = 'http://localhost:5000/api'
+// #for localhost
+// export const baseUrl = 'http://localhost:5000/api'
 
+// for internet
+export const baseUrl = 'https://mechat-backend.netlify.app:5000/api'
 export const postRequest = async (url, body) => {
   const response = await fetch(url, {
     method: 'POST',
