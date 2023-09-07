@@ -27,7 +27,7 @@ export const ChatContextProvider = ({ children, user }) => {
   // console.log('Online Users:', onlineUsers)
   //initial socket
   useEffect(() => {
-    const newSocket = io('http://localhost:3000')
+    const newSocket = io('https://mechat-socket.onrender.com')
     setSocket(newSocket)
 
     return () => {
